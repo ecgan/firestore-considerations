@@ -20,7 +20,7 @@ In Firestore, the data is organized in the collection -> document -> subcollecti
 
 When you delete a document that has associated subcollections, the subcollections are not deleted. They are still accessible by reference.
 
-If you want to delete documents in subcollections when deleting a document, you must do so manually, as shown in [Delete Collections](https://firebase.google.com/docs/firestore/manage-data/delete-data#collections
+If you want to delete documents in subcollections when deleting a document, you must do so manually, as shown in [Delete Collections](https://firebase.google.com/docs/firestore/manage-data/delete-data#collections)
 
 ## Delete collection by deleting individual documents
 
