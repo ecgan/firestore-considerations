@@ -1,3 +1,15 @@
+- [Introduction](#introduction)
+- [Considerations](#considerations)
+  * [Deleting a document does not delete its subcollections](#deleting-a-document-does-not-delete-its-subcollections)
+  * [Delete collection by deleting individual documents](#delete-collection-by-deleting-individual-documents)
+  * [Document deletion limit: max 20K/day on free Spark plan](#document-deletion-limit-max-20kday-on-free-spark-plan)
+  * [Cannot query across subcollections](#cannot-query-across-subcollections)
+  * [Data nesting can be up to 100 levels deep](#data-nesting-can-be-up-to-100-levels-deep)
+  * [Choosing data structure - nested data in document vs. subcollections vs. root-level collections](#choosing-data-structure---nested-data-in-document-vs-subcollections-vs-root-level-collections)
+  * [No automatic ordering by creation date](#no-automatic-ordering-by-creation-date)
+  * [Transactions](#transactions)
+- [Questions / Issues](#questions--issues)
+
 # Introduction
 
 Firestore is [launched](https://firebase.googleblog.com/2017/10/introducing-cloud-firestore.html) in early October 2017 to the public as a beta release. 
